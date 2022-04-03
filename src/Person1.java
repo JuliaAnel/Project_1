@@ -10,7 +10,7 @@ public class Person1 {
     }
 
     void getName () {
-        if (this.gender == "male") {
+        if (this.gender.equals("male")) {
             System.out.println("Mr." + this.name);
         }
         else {
