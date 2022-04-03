@@ -2,7 +2,14 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 public class Main {
+
+
+
     public static void main(String[] args) {
+
+        Test t = new Test();
+
+
 //        int a = 9;
 //        int b = 2;
 //        System.out.println(a / b);
@@ -93,9 +100,9 @@ public class Main {
 //            int[] a = {2, 4};
 //            int[] b = {2, 4};
 
- //       System.out.println(a == b); //false потому что переменные ссылаются на разные массивы
- //       System.out.println(a);
- //       System.out.println(b);
+        //       System.out.println(a == b); //false потому что переменные ссылаются на разные массивы
+        //       System.out.println(a);
+        //       System.out.println(b);
 
 //        int[] a = {2, 4};
 //        int[] b = a;
@@ -107,7 +114,7 @@ public class Main {
         String a = "Hi!";
         String b = "Hi!";
 
-        System.out.println( a == b);
+        System.out.println(a == b);
         System.out.println(a.equals((b)));
 
         Integer c = 10;
@@ -117,7 +124,7 @@ public class Main {
         int[] v = {8, 2, 3, 5};
         int[][] n = {{1, 2}, {3, 4, 5}};
 
-        for(int i = 0; i < n.length; i++) {
+        for (int i = 0; i < n.length; i++) {
             for (int j = 0; j < n[i].length; j++) {
                 System.out.println(n[i][j]);
             }
@@ -129,15 +136,60 @@ public class Main {
         String str = "Hi!";
         System.out.println(str.indexOf('!'));
 
-
-
-
-
-
-
-
-
-
-
+        int[][] array1 = {{1, 10, 100, 1000}, {2, 20, 200, 2000}, {3, 30, 300, 3000}, {4, 40, 400, 4000}};
+        int sum = 0;
+        for (int i = 0; i < array1.length; i++) {
+            System.out.println(Arrays.toString(array1[i]));
+            sum = 0;
+            for (int j = 0; j < array1[i].length; j++) {
+                sum = sum + array1[i][j];
+            }
+            System.out.println(" sum = " + sum);
         }
-    }
+
+
+//        for ( int i = 0; i < 5; i++) {
+//            if (i == 3) {
+//                break; // заканчивает цикл
+//            }
+//            System.out.println(i);
+//        }
+//
+//        for ( int i = 0; i < 5; i++) {
+//            if (i == 3) {
+//                continue; //заканчивает итерацию
+//            }
+//            System.out.println(i);
+//        }
+        String string = "Hi!";
+        System.out.println(string.indexOf('!')); //можно передавать в эту функцию как символ, так и строку
+        System.out.println(string.indexOf("!"));
+
+        int f = 5;
+        int g = 10;
+
+        t.sum(f, g); // аргументы метода
+
+        int x = 3;
+        int y = 11;
+
+        t.sum(x, y);
+
+        int u = 4;
+
+        System.out.println(t.sum3(x, y, u));
+//        String result;
+//        public static String numberToString(int num) {
+//             result = Integer.toString(num);
+//        }
+//        System.out.println(result);
+//        }
+//    }
+        int[] array5 = {2, 6, 4, 7, 8};
+        Main1 main = new Main1();
+        main.findSmallestInt(array5);
+
+        System.out.println(main.numberToString(5));
+        System.out.println(main.numberToString1(4));
+
+    }   }
