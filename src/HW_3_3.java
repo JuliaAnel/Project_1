@@ -8,16 +8,25 @@ public class HW_3_3 {
 //        значение переменной между 5 и 40 включительно - если это правда
 //        значение переменной меньше 5 или больше 40 - если предыдущие условие ложное
         int a = 28;
-        if (a > 10 && a < 100 && a / 2 > 20){
-            System.out.println("больше 10 и меньше 100 и результат деления на 2 больше 20");
-        } else if (a >= 5 && a <= 40) {
+        if (a > 10){
+            System.out.println("больше 10");
+        }
+        if (a < 100) {
+            System.out.println("меньше 100");
+        }
+        if (a / 2 > 20) {
+            System.out.println("результат деления на 2 больше 20");
+        }
+
+        if (a >= 5 && a <= 40) {
             System.out.println("значение переменной между 5 и 40 включительно ");
-        } else {
+        }
+        else {
             System.out.println("значение переменной меньше 5 или больше 40");
         }
         int i = 0;
         for (; i < 5; i++) {
-            //System.out.println(i);
+            System.out.println(i);
         }
         System.out.println(i);
     }

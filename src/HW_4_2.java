@@ -13,6 +13,7 @@ public class HW_4_2 {
                 System.out.println(s.charAt(i));
             }
         }
+
 //        Задача №2
 //        Дана строка:
 //        String s = “Перевыборы выбранного президента”;
@@ -40,6 +41,7 @@ public class HW_4_2 {
 
             index = m.indexOf("рит", index + 1);
         }
+
 
         String subPart = "рит";
         int subCount = subPart.length();

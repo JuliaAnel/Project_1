@@ -6,9 +6,9 @@ public class HW_3_2 {
 
     public static void main(String[] args) {
         int a = 10;
-        int b = 5;
-        int result = a + b;
-        if (result % 2 == 0) {
+        int b = 6;
+        int sum = a + b;
+        if (sum % 2 == 0) {
             System.out.println("maybe a and b are even"); //если сумма переменных четная
         } else {
             System.out.println("some variable is odd"); // если сумма переменных нечетная

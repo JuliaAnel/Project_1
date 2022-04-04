@@ -7,7 +7,7 @@ public class HW_4_1 {
         int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
         int sum = 0;
         for(int i = 0; i < array.length; i++){
-            sum = sum + array[i];
+            sum += array[i];
         }
         System.out.println(sum);
 //        Задача №2
@@ -44,7 +44,7 @@ public class HW_4_1 {
         double sum1 = 0;
         //double average = 0;
         for(int i = 0; i < array1.length; i++){
-            sum1 = sum1 + array1[i];
+            sum1 += array1[i];
 
         }
        // average = sum1 / array1.length;
@@ -85,10 +85,10 @@ public class HW_4_1 {
 //        необходимо вывести количество элементов в массиве.
         int count = 0;
         for (int i = 0; i < array3.length; i++) {
-            count = count + array3[i].length;
+                count += array3[i].length;
             }
             System.out.println(count);
-
         }
+
     }
 
