@@ -1,4 +1,4 @@
-package Homework.HW_7;
+package Homework.HW_7_2;
 
 public class Month {
     /**Создать класс Homework.HW_6.Month с полями: имя месяца, количеством дней и

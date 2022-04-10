@@ -1,6 +1,4 @@
-package Homework.HW_7;
-
-import Homework.HW_7.Month;
+package Homework.HW_7_2;
 
 public class MonthUtils {
 

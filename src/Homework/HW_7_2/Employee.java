@@ -1,4 +1,4 @@
-package Homework.HW_7;
+package Homework.HW_7_2;
 
 public class Employee {
     /**Необходимо создать класс Homework.HW_6.Employee с полями:
@@ -12,7 +12,7 @@ public class Employee {
     private char gender;
     private double salary;
 
-    public Employee (String name, int age, char gender, int salary) {
+    public Employee(String name, int age, char gender, double salary) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -22,15 +22,6 @@ public class Employee {
     public Employee(String name) {
 
         this.name = name;
-    }
-
-    public Employee(String name, int age, char gender, double salary) {
-
-
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.salary = salary;
     }
 
     public String getName() {
