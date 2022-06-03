@@ -1,10 +1,14 @@
 package Homework.HW_7_2;
 
-public class Employee {
-    /**Необходимо создать класс Homework.HW_6.Employee с полями:
+import common.IEmployee;
+import common.ISalary;
+import common.IName;
+
+public class Employee implements IEmployee {
+    /**Необходимо создать класс Employee с полями:
      * имя, возраст, пол и ЗП в день. Все поля сделать
      * приватными и для каждого поля добавить методы set и get.
-     * Класс должен иметь метод - getSalary(Homework.HW_6.Month[] monthArray),
+     * Класс должен иметь метод - getSalary(Month[] monthArray),
      * метод возвращает зарплату за те месяцы которые были переданы в качестве аргумента.
      */
     private String name;
@@ -17,11 +21,6 @@ public class Employee {
         this.age = age;
         this.gender = gender;
         this.salary = salary;
-    }
-
-    public Employee(String name) {
-
-        this.name = name;
     }
 
     public String getName() {
@@ -48,7 +47,7 @@ public class Employee {
         this.gender = gender;
     }
 
-    public double getSalary() {
+    public double getSalary () {
         return salary;
     }
 
@@ -56,7 +55,11 @@ public class Employee {
         this.salary = salary;
     }
 
-//    public double getSalary (Homework.HW_6.Month[] monthArray) {
-//        return
-//    }
+    public double getSalary(Month[] monthArray) {
+        double result = 0;
+        for (int i = 0; i < monthArray.length; i++) {
+            result += getSalary() * monthArray[i].getWorkDays();
+        }
+        return result;
+    }
 }

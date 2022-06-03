@@ -1,41 +1,31 @@
 package Homework.HW_7_2;
 
 public class Month {
-    /**Создать класс Homework.HW_6.Month с полями: имя месяца, количеством дней и
-     * количеством рабочих дней. Создать класс MonthUtils который бы хранил
-     * подготовленные месяцы или их массивы для использования (объекты класса Homework.HW_6.Month).
+    /**Создать класс Month с полями: имя месяца, количеством дней и
+     * количеством рабочих дней.
      */
-    private String month;
-    private int countOfDays;
-    private int countOfWorkingDays;
+    private final String month;
+    private final int days;
+    private final int workDays;
 
-    public Month(String month, int countOfDays, int countOfWorkingDays) {
+    public Month(String month, int days, int workDays) {
         this.month = month;
-        this.countOfDays = countOfDays;
-        this.countOfWorkingDays = countOfWorkingDays;
+        this.days = days;
+        this.workDays = workDays;
     }
 
     public String getMonth() {
         return month;
     }
 
-    public void setMonth(String month) {
-        this.month = month;
+    public int getDays() {
+        return days;
     }
 
-    public int getCountOfDays () {
-        return countOfDays;
+    public int getWorkDays() {
+        return workDays;
     }
 
-    public void setCountOfDays (int countOfDays) {
-        this.countOfDays = countOfDays;
-    }
 
-    public int getCountOfWorkingDaysCountOfDays () {
-        return countOfWorkingDays;
-    }
 
-    public void setCountOfWorkingDaysCountOfDays (int countOfWorkingDays) {
-        this.countOfWorkingDays = countOfWorkingDays;
-    }
 }

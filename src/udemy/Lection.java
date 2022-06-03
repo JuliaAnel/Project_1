@@ -158,5 +158,9 @@ public class Lection {
 //        System.out.println(in1);
         int v = in % ch;
         System.out.println(v);
+
+        String a = "200";
+        double ba = Double.parseDouble(a);
+        System.out.println(ba);
     }
 }
